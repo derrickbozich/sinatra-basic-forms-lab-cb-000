@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Form</title>
+  </head>
+  <body>
+    <h1>Puppies!</h1>
+    <p>Puppy Name:</p>
+    <p><%= @puppy.name %></p>
+    <p>Puppy Breed:</p>
+    <p><%= @puppy.breed %></p>
+    <p>Puppy Age:</p>
+    <p><%= @puppy.age %></p>
+
+  </body>
+</html>
+
+("Puppy Name:\nButch")
+expect(page).to have_text("Puppy Breed:\nMastiff")
+expect(page).to have_text("Puppy Age:\n6 months")
